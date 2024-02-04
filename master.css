@@ -61,7 +61,7 @@ nav a:hover{
 }
 .hero .text h1, .hero .text h3{
     color: #eee;
-    font-size: 40px;
+    font-size: clamp(40px,65px);
     line-height: 1.4;
 }
 .hero .text h3 {
@@ -416,8 +416,56 @@ footer .logo img {
     white-space: nowrap;
 }
   
+  @media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .hero .text h1 {
+    font-size: 50px;
+  }
+
+  .hero .text h3 {
+    font-size: 40px;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  .boxx h2, .boxx p {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
   img.ps {
 margin: 0;
     width: 50%
 }
+}
+@media (min-width: 1200px) {
+  .exer .box img {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    padding: 16px 32px;
+  }
+
+  .logo img {
+    width: 180px;
+  }
+
+  nav a {
+    padding: 20px;
+  }
+
+  .hamburg span {
+    height: 3px;
+    margin-top: 8px;
+  }
 }
